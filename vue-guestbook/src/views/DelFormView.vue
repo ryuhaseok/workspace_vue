@@ -41,7 +41,14 @@ export default {
                     responseType: 'json' //수신타입
                 }).then(response => {
                     console.log(response.data); //수신데이타
-                    this.$router.push({ path: '/' });
+
+                    if(response.data>0){
+                        this.$router.push({ path: '/' });
+
+                    }else{
+                        alert("패스워드를 확인해주세요");
+                    }
+
 
                 }).catch(error => {
                     console.log(error);

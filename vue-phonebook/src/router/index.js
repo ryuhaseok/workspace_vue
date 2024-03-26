@@ -10,13 +10,13 @@ const routes = [
     component: ListView
   },
   {
-    path: '/ModifyFormView',
-    name: '/ModifyFormView',
+    path: '/modifyform/:personId',
+    name: '/modifyform',
     component: ModifyFormView
   },
   {
-    path: '/WriteFormView',
-    name: '/WriteFormView',
+    path: '/writeform',
+    name: '/writeform',
     component: WriteFormView
   },
 ]

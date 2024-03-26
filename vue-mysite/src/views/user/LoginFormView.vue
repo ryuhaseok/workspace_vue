@@ -131,20 +131,29 @@ export default {
                 responseType: 'json' //수신타입
             }).then(response => {
                 console.log(response); //수신데이타
-                console.log(response.data); //수신데이타 authUser
+
+                if(response.data.result == "success"){
+                    //로그인 사용자 정보
+                    let authUser = response.data.apiData;
+
+                    //token 응답문서의 헤더에 있음
+                    const token = response.headers.authorization.split(" ")[1];
+                    
+                    this.$store.commit("setAuthUser", authUser);
+                    this.$store.commit("setToken", token);
+
+                    console.log(authUser);
+                    console.log(token);
+
+                    this.$router.push("/");
+
+                } else {
+                    console.log(response.data.message);
+                    alert("로그인 정보를 확인해주세요");
+
+                }
+
                 
-                //로그인 사용자 정보
-                let authUser = response.data;
-                this.$store.commit("setAuthUser", authUser);
-
-                //token 응답문서의 헤더에 있음
-                const token = response.headers.authorization.split(" ")[1];
-                this.$store.commit("setToken", token);
-
-                console.log(token);
-
-                this.$router.push("/");
-
             }).catch(error => {
                 console.log(error);
             });

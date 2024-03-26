@@ -14,6 +14,9 @@ export default createStore({
         },
         setToken(state, payload) {
             state.token = payload;
+        },
+        setAuthName(state, payload) {
+            state.authUser.name = payload;
         }
     },
     plugins: [

@@ -1,0 +1,158 @@
+.wrap {
+    height: fit-content;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+.chartMainHeader ul li:last-child a{
+    width: 300px;
+}
+
+.chartMainHeader .logoImg  img{
+    display: block;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: -150px;
+}
+.listBox table {
+    width: 1200px;
+    padding: 20px;
+    font-size: 22px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.listBox table thead,
+.listBox table tbody {
+    border-bottom: 1px solid #777777;
+}
+.listBox table td {
+    padding: 10px 0;
+    border-top: 1px dotted #ccc8c8;
+}
+h1 {
+    font-size: 40px;
+    margin: 30px;
+}
+.modifyBtn {
+    width: 55px;
+    height: 28px;
+    font-size: 15px;
+}
+/* insert box */
+.insertMenuBox {
+    width: 1200px;
+    height: 100px;
+    margin: 30px auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 22px;
+    position: relative;
+    border-bottom: 1px solid #777777;
+}
+.insertMenuBox .textBox {
+    margin-top: 20px 0;
+}
+.insertMenuBox .textBox {
+    text-align-last: left;
+}
+.insertMenuBox .textBox input {
+    margin: 0 10px;
+}
+.insertMenuBox input {
+    width: 250px;
+    height: 35px;
+    border-radius: 15px;
+    border: 2px solid #FED900;
+}
+#menuPrice {
+    width: 180px;
+}
+.categoryBox {
+    position: absolute;
+    top: 20px;
+    right: 280px;
+}
+.category {
+    width: 140px;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 15px;
+    border: 3px solid #FED900;
+}
+.submitBtn {
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+    background: #Fff;
+    border: 2px solid #FED900;
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+.submitBtn:hover {
+    background: #FED900;
+    /* color: #fff; */
+    font-weight: bold;
+}
+.pictureBox {
+    padding: 20px;
+    position: relative;
+    font-size: 22px;
+}
+.pictureBox label {
+    margin-right: 15px;
+}
+.pictureBox #pdNo {
+    width: 50px;
+    height: 35px;
+}
+/* imgModal */
+.imgModalBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0, .4);
+}
+.imgModal {
+    width: 550px;
+    height: 350px;
+    text-align: center;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.imgModal .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+}
+.imgModal span {
+    margin-right: 20px;
+}
+.imgModal span:nth-of-type(1),
+.imgModal span:nth-of-type(3) {
+    font-size: 17px;
+    font-weight: bold;
+}
+.imgModal span:nth-of-type(2),
+.imgModal span:nth-of-type(4) {
+    padding: 5px 10px;
+    border: 3px solid #FED900;
+    border-radius: 10px;
+}
+.imgModal form {
+    margin-top: 50px;
+}
+.imgModal form div{
+    margin-top: 50px;
+}

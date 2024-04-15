@@ -156,3 +156,25 @@ h1 {
 .imgModal form div{
     margin-top: 50px;
 }
+
+/* 수정css */
+.modifyLow td>input{
+    border: 1px solid #000;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    height: 40px;
+}
+.modifyLow td:nth-child(2)>select{
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 40px;
+}
+.modifyLow td:nth-child(3)>input{
+    width: 270px;
+}
+.modifyLow td:nth-child(4)>input{
+    width: 150px;
+}
+
+

@@ -77,7 +77,7 @@
                                 class="modifyBtn">등록</button>
                         </td>
                     </tr>
-                    <tr v-else>
+                    <tr class="modifyLow" v-else>
                         <td>{{ productVo.no }}</td>
                         <td>
                             <select v-model="productVo.category" class="category" id="category">
@@ -85,7 +85,7 @@
                                 <option>커피</option>
                                 <option>논커피</option>
                                 <option>밀크쉐이크</option>
-                                <option>스무디/프라페</option>
+                                <option>스무디</option>
                                 <option>디저트</option>
                             </select>
                         </td>
